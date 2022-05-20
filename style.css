@@ -44,12 +44,12 @@ body {
     margin-right: 33px;
 }
 
-.third_img:visited .navigation {
+.third_img:active .navigation {
     display: flex;
 }
 
-.img_close:visited .navigation {
-    display: none
+.img_close:active .navigation {
+    display: none;
 }
 
 .fourth_img {
