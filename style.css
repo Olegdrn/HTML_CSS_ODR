@@ -1027,4 +1027,8 @@ summary ::after {
 .page-link__:hover {
   color: #F16D7F;
 }
+.detail:hover {
+    color: #F16D7F;
+}
+
 /*# sourceMappingURL=style.css.map */
