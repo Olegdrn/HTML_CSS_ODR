@@ -995,15 +995,21 @@ summary ::after {
 }
 
 .page-link {
-  margin-right: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #9F9F9F;
 }
 
 .page-link_ {
-  margin-right: 1px;
+    margin-right: 1px;
+    text-decoration: none;
+    color: #9F9F9F;
 }
 
 .page-link__ {
-  margin-right: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #9F9F9F;
 }
 
 .pagination_ {
