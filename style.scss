@@ -193,6 +193,10 @@ body {
     margin: 11px 0px;
 }
 
+.menu_content:hover {
+    color: $main_bright_color;
+}
+
 .h_content {
     text-decoration: none;
     font-weight: 400;
@@ -432,11 +436,34 @@ body {
     background-color: #E1E1E1;
     border-radius: 15px 0px 0px 15px;
     padding: 12px 64px 12px 22px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include txt_style(400, 14px, 17px, $grey_color );
     opacity: 0.67;
+
+    &_offerinp {
+        margin-bottom: 21px;
+        border-radius: 0;
+        padding: 12px 270px 12px 17px;
+        @include txt_style(300, 13px, 16px, $grey_color );
+        width: $container_width*0.15;
+    }
 }
+
+.head4_form {
+    @include txt_style(300, 16px, 19px, $black_color );
+    margin-bottom: 20px;
+}
+
+.advice {
+    @include txt_style(300, 13px, 16px, $grey_color);
+    display: none;
+    margin-bottom: 39px;
+}
+
+.passw:hover .advice {
+    display: block;
+}
+
+
 
 .but1 {
     background-color: $main_bright_color;
@@ -448,7 +475,22 @@ body {
     color: #FFFFFF;
     width: 100px;
     animation: vibrate-1 0.3s linear infinite both;
+
+    &_regist {
+        animation: none;
+        width: $container_width*0.11;
+        padding: 12px 24px;
+        border-radius: 0;
+    }
 }
+
+.whois {
+    display: flex;
+    justify-content: space-between;
+    max-width: $container_width*0.15;
+    margin: 10px 0 33px;
+}
+
 
 
 .footer {
@@ -634,13 +676,24 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: $grey_color;
+    list-style-type: none;
 }
+
+.p_product_page_link {
+    text-decoration: none;
+}
+
+.p_product_page_link:hover {
+    color: $main_bright_color;
+}
+
 
 .pp_product_page {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: $main_bright_color;
+    list-style-type: none;
 }
 
 .first_product_section_page {
@@ -853,6 +906,10 @@ summary {
     display: block;
 }
 
+summary:hover {
+    cursor: pointer;
+}
+
 summary::-webkit-details-marker {
     display: none;
 }
@@ -911,4 +968,65 @@ summary ::after {
 
 .detail:hover {
     color: $main_bright_color;
+}
+
+.registration {
+    display: flex;
+    margin-bottom: 96px;
+}
+
+.offer_column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input_column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.but1:hover {
+    background-color: $grey_color;
+    color: #F16D7F;
+    cursor: pointer;
+}
+
+.button_product:hover {
+    transform: scale(1.2);
+}
+
+.button_section:hover {
+    background-color: $border_color;
+    color: $main_bright_color;
+}
+
+.top_link_content:hover {
+    transform: scale(1.1);
+}
+
+.form_cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.breadcrumb {
+    display: flex;
+}
+
+.mrgbt {
+    margin-bottom: 22px;
+    margin-left: 22px;
+}
+
+.p_offer {
+    @include txt_style(300, 16px, 19px, $black_color);
+    @extend .mrgbt;
+}
+
+.head4_offer {
+    @include txt_style(300, 16px, 19px, $black_color );
+    @extend .mrgbt;
 }
