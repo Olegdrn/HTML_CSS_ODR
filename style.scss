@@ -1045,3 +1045,24 @@ summary ::after {
     align-items: center;
     margin-left: 8px;
 }
+
+.cart_elem {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.cart_page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_column {
+    width: 48%;
+}
+
+.couple_button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
