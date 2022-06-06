@@ -27,8 +27,8 @@
                 <div class="right_img">
                     <div class="third_img"><a href="#"> <img src="image/header/Forma.png" alt="logo2"></a>
                         <nav class="navigation">
-                            <div class="img_close"><a href="#"><img src="image/top/navigation/exit.jpg" alt="navi"></a>
-                            </div>
+                            <!-- <div class="img_close"><a href="#"><img src="image/top/navigation/exit.jpg" alt="navi"></a>
+                            </div> -->
                             <div class="h_menu">
                                 <h4>MENU</h4>
                             </div>
@@ -57,9 +57,10 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="fourth_img"><a href="#"><img src="image/header/Forma 1.png" alt="logo3"></a>
+                    <div class="fourth_img"><a href="registration.html"><img src="image/header/Forma 1.png"
+                                alt="logo3"></a>
                     </div>
-                    <div class="fifth_img"><a href="#"><img src="image/header/Forma 2.png" alt="logo3"></a>
+                    <div class="fifth_img"><a href="Cart.html"><img src="image/header/Forma 2.png" alt="logo3"></a>
                     </div>
                 </div>
             </div>
@@ -72,67 +73,62 @@
         </div>
     </section>
     <section class="cart_page container">
-        <div class="cart_elem">
-            <div class="product_elements">
-                <a class="product_link_content" href="#">
-                    <img class="img_product_link" src="image/product_line/image_card_1.jpg" alt="none">
-                    <div class="content_product_card">
-                        <p class="pp_card">ELLERY X M'O CAPSULE</p>
-                        <p class="ppp_card">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                            of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="pppp_card">$52.00</p>
+        <form class="cart_elem" action="#">
+            <div class="cart_id">
+                <img class="cart_id_img" src="image/product_line/image_card_3.jpg" alt="oops">
+                <div class="description_id">
+                    <div class="id_cart_line">
+                        <h4 class="card_id_head">MANGO PEOPLE</h4>
+                        <a class="link_cart" href="#"><img src="image/top/navigation/exit.jpg" alt="oops"></a>
                     </div>
-                </a>
-                <div class="hover_img">
-                    <a class="hover_img_link" href="#">
-                        <img class="img_hover_img_link" src="image/product_line/card_img.png" alt="noth">
-                        <p class="ppppp_card"> Add to Cart</p>
-                    </a>
+                    <h4 class="card_id_head">T-SHIRT</h4>
+                    <p class="card_id_para">Price: <span class="card_id_para_color">$300</span> </p>
+                    <p class="card_id_para">Color: Red</p>
+                    <p class="card_id_para">Size: Xl </p>
+                    <label class="card_id_para">
+                        Quantity &nbsp <input class="quantity_inp" type="number" min="1" max="10">
+                    </label>
                 </div>
             </div>
-            <div class="product_elements">
-                <a class="product_link_content" href="#">
-                    <img class="img_product_link" src="image/product_line/image_card_2.jpg" alt="none">
-                    <div class="content_product_card">
-                        <p class="pp_card">ELLERY X M'O CAPSULE</p>
-                        <p class="ppp_card">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                            of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="pppp_card">$52.00</p>
+            <div class="cart_id">
+                <div class="cart_id_size">
+                    <img src="image/catalog/2man.png" alt="oops">
+                </div>
+                <div class="description_id">
+                    <div class="id_cart_line">
+                        <h4 class="card_id_head">MANGO PEOPLE</h4>
+                        <a class="link_cart" href="#"><img src="image/top/navigation/exit.jpg" alt="oops"></a>
                     </div>
-                </a>
-                <div class="hover_img">
-                    <a class="hover_img_link" href="#">
-                        <img class="img_hover_img_link" src="image/product_line/card_img.png" alt="noth">
-                        <p class="ppppp_card"> Add to Cart</p>
-                    </a>
+                    <h4 class="card_id_head">T-SHIRT</h4>
+                    <p class="card_id_para">Price: <span class="card_id_para_color">$300</span> </p>
+                    <p class="card_id_para">Color: Red</p>
+                    <p class="card_id_para">Size: Xl </p>
+                    <label class="card_id_para">
+                        Quantity &nbsp <input class="quantity_inp" type="number" min="1" max="10">
+                    </label>
                 </div>
             </div>
+
             <div class="couple_button">
-                <button class="but1" type="reset">CLEAR SHOPPING CART</button>
-                <button class="but1" type="button">CONTINUE SHOPPING</button>
+                <button class="but1 but1_cart" type="reset">CLEAR SHOPPING CART</button>
+                <button class="but1 but1_cart" type="button">CONTINUE SHOPPING</button>
             </div>
-        </div>
-        <form class="cart_column" action="#">
-            <h4 class="head4_form">Your Name</h4>
-            <input class="inp1 inp1_offerinp" type="text" placeholder="First Name">
-            <input class="inp1 inp1_offerinp" type="text" placeholder="Last Name">
-            <div class="whois">
-                <label>
-                    <input type="radio" name="who">&nbsp &nbsp Male
-                </label>
-                <label>
-                    <input type="radio" name="who"> &nbsp &nbsp Female
-                </label>
-            </div>
-            <h4 class="head4_form">Login details</h4>
-            <input class="inp1 inp1_offerinp" type="email" placeholder="Email">
-            <div class="passw">
-                <input class="inp1 inp1_offerinp" type="password" placeholder="Password">
-                <p class="advice">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
-                    lowercase letters</p>
-            </div>
-            <button class="but1 but1_regist" type="submit">JOIN NOW</button>
         </form>
+        <section class="cart_column">
+            <form action="#">
+                <h4 class="head4_form head4_form_cart_form">SHIPPING ADRESS</h4>
+                <input class="inp1 inp1_cartinp" type="text" placeholder="Country">
+                <input class="inp1 inp1_cartinp" type="text" placeholder="State">
+                <input class="inp1 inp1_cartinp" type="text" placeholder="Postcode / Zip">
+                <button class="but1 but1_cart_form" type="button">GET A QUOTE</button>
+            </form>
+            <form class="second_form" action="#">
+                <p class="second_form_para1">SUB TOTAL &emsp; $900</p>
+                <p class="second_form_para">GRAND TOTAL &emsp; <span class="card_id_para_color">$900</span></p>
+                <div class="hrbl"></div>
+                <button class="but1 but1_second_form" type="button">PROCEED TO CHECKOUT</button>
+            </form>
+        </section>
     </section>
     <section class="bottom">
         <div class="bottom_backg">
